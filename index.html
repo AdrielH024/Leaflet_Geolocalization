@@ -1,16 +1,17 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
 <html>
-    <head>
-        <base href="/" />
+    <head>    
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="public/css/styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
         integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
         crossorigin=""/>
-
-        <style>
-            #map { height: 400px; }
-        </style>
+        
     </head>
     <body>
-        <h1>teste</h1>
+        <h1>Leaflet and geolocalization</h1>
         <h2>longitude</h2>
         <h2 id="longi"></h2>
         <h2>latitude</h2>
@@ -35,7 +36,7 @@
         console.log(x,y);
     }
     function error(){
-        console.log("erro");
+        console.log("error");
     }
     navigator.geolocation.getCurrentPosition(success, error);
 
