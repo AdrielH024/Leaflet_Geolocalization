@@ -1,8 +1,31 @@
 #map { 
-	height: 400px; 
+	height: 600px;
+	width: 96%; 
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 body{
 	color:  white;
 	background-color: rgb(3, 1, 17);
+}
+
+#content{
+	background-color: rgb(11, 3, 60);
+	width: 96vw;
+}
+
+#data_display{
+	margin-left: 4%;
+
+}
+
+#data_display > h1{
+	display: inline;
+}
+
+
+header{
+	text-align: center;
 }
