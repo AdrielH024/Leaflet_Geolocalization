@@ -1,19 +1,22 @@
 #map { 
-	height: 600px;
-	width: 96%; 
+	height: 85vh;
+	width: 90%; 
 	position: relative;
 	margin-left: auto;
 	margin-right: auto;
+	z-index: 1;
 }
 
 body{
 	color:  white;
 	background-color: rgb(3, 1, 17);
+	overflow:none;
 }
 
 #content{
 	background-color: rgb(11, 3, 60);
 	width: 96vw;
+	z-index: 0;
 }
 
 #data_display{
@@ -39,4 +42,8 @@ width: auto;
 	background-color: rgb(0, 83, 200);
 	border-color: rgb(0, 83, 200);
 	border-radius: 200px;
+	position:fixed;
+	z-index: 2;
+	right: 5%;
+	bottom: 2%;
 }
