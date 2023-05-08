@@ -17,15 +17,26 @@ body{
 }
 
 #data_display{
-	margin-left: 4%;
+	display: flex;
+	justify-content: center;
+}
+
+#data_display > div{
+width: auto;
+	margin: 20px;
+
 
 }
 
-#data_display > h1{
-	display: inline;
+
+#return{
+	border:3px;
+	border-color: white;
+	background-color: rgb(11, 3, 60);
 }
 
-
-header{
-	text-align: center;
+#add{
+	background-color: rgb(0, 83, 200);
+	border-color: rgb(0, 83, 200);
+	border-radius: 200px;
 }
