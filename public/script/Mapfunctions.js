@@ -1,12 +1,9 @@
 var x;
 var y;
-var longi = document.getElementById("longi");
-var lati = document.getElementById("lati");
 function success(position) {
     x = position.coords.latitude;
     y = position.coords.longitude;
-    longi.innerHTML = x;
-    lati.innerHTML = y;
+    var marker = L.marker([x, y]).addTo(map);
     console.log(x,y);
 }
 function error(){
@@ -21,3 +18,5 @@ maxZoom: 19,
 attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 }).addTo(map);
     
+var marker = L.marker([x, y]).addTo(map);
+
