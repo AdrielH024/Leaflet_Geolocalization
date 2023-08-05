@@ -19,4 +19,3 @@ attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreet
 }).addTo(map);
     
 var marker = L.marker([x, y]).addTo(map);
-
